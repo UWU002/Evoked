@@ -1,0 +1,331 @@
+/*Fuentes para el texto*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url(Fonts/Minecraft.ttf) format(truetype);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Minecraft", sans-serif;
+}
+
+@font-face {
+    font-family: "Minecraft2";
+    src: url(Fonts/Minecraft2.ttf) format(truetype);
+}
+
+b {
+    font-family: "Minecraft2", sans-serif;
+}
+
+/*Margenes de la pagina*/
+
+#MyDiv {
+    margin-left: 2%;
+}
+
+#MyDiv2 {
+    margin-left: 20%;
+}
+
+/*Edicin de todos los elementos flex del header*/
+.background {
+    height: fit-content;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.flexhome {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.flex-topleft {
+    flex: 65%;
+
+}
+
+.flex-topright {
+    flex: 35%;
+    margin-left: 68%;
+
+}
+
+.flex-left {
+    flex: 30%;
+    background-color: transparent;
+    color: white;
+}
+
+.flex-left-right {
+    flex: 23%;
+    background-color: transparent;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: transparent;
+}
+
+.flex-right {
+    flex: 15%;
+    margin-left: 23%;
+    background-color: transparent;
+    color: white;
+}
+
+.flex-right-right {
+    flex: 20%;
+    background-color: transparent;
+    color: white;
+}
+
+.nodeco{
+    text-decoration: none;
+    color: white;
+}
+
+.nodeco:hover{
+    text-decoration: underline;
+}
+
+/*Edicion botones header*/
+.button {
+    background-color: transparent;
+    border: 0cm;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 30px;
+    color: white;
+    border: 2px solid white;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.deco {
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+}
+
+.deco:hover {
+    border-radius: 6px;
+    background-color: black;
+}
+
+/*Menú desplegable*/
+/* Boton */
+.dropdown-btn {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 16px 30px;
+    font-size: 16px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+/* Contenido */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(54, 54, 54);
+    min-width: 160px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+/* Links */
+.dropdown-content a {
+    color: white;
+    padding: 13px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover */
+.dropdown-content a:hover {
+    background-color: black;
+    border-radius: 30px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown-btn:hover .dropdown-content {
+    display: block;
+}
+
+/*Parte 1/4 pagina*/
+.imagesize {
+    width: 1600px;
+    height: 784px;
+}
+
+.text-overlay2:hover {
+    border: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.image-container1 {
+    position: relative;
+}
+
+.text-overlay2 {
+    border: 3px solid white;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 110px;
+}
+
+/*Parte 2/4 pagina*/
+.generaldiv {
+    display: flex;
+
+}
+
+.imagediv {
+    flex: 50%;
+}
+
+.logosize {
+    height: 300px;
+    width: 500px;
+
+}
+
+.explenationdiv {
+    flex: 50%;
+    margin-top: 2%;
+    margin-right: 20%;
+    text-align: center;
+    color: white;
+}
+/*Seccion 3/4*/
+
+.gendiv1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 700px;
+    background-color:#48642475;
+    margin-left: 8%;
+    margin-right: 8%;;
+}
+.genpos1 {
+	position: relative;
+	flex-basis: 48%;
+	height: 50%;
+	margin: 1%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    color: white;
+}
+
+.top1 {
+	top: 0;
+}
+
+.down1 {
+	bottom: 0;
+}
+
+.left1 {
+	left: 0;
+}
+
+.right1 {
+	right: 0;
+}
+
+.img1 {
+	max-width: 40%;
+	max-height: 40%;
+}
+
+.p1 {
+	margin-top: 10px;
+	text-align: center;
+}
+/*Parte 4/4 pagina*/
+.gendiv2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 1000px;
+}
+.genpos2 {
+	position: relative;
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    color: white;
+}
+.img2 {
+	max-width: 50%;
+	max-height: 50%;
+}
+/*Footer de la Pagina*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+/*Hazer la pagina responsive*/
+@media (min-width: 2700px) {
+
+}
+
+@media (min-width: 600px) {
+
+  }
+  
+  @media (max-width: 599px) {
+
+  }

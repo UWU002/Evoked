@@ -1,0 +1,103 @@
+/*Aqui edito el tipo de letra y el color*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    color: white;
+}
+
+/*Se establecen los margenes*/
+
+#MyDiv {
+    margin-left: 2%;
+}
+
+#MyDiv1 {
+    margin-left: 2%;
+}
+
+#MyDiv2 {
+    margin-bottom: 12%;
+}
+
+
+/*Edicin de todos los elementos flex del header*/
+
+.flexhome {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.flex-topleft {
+    flex: 65%;
+
+}
+
+.flex-topright {
+    flex: 35%;
+    margin-left: 68%;
+
+}
+
+/*Edicion de elementos varios*/
+/*Fondo de la pagina*/
+.background {
+    height: 90px;
+    border-radius: 10px;
+    background-image: radial-gradient(black, rgb(27, 31, 27)); 
+}
+
+
+ /*Edicion botones header*/
+.button {
+    background-color: transparent;
+    border: 0cm;
+    padding: 6px;
+    border-radius: 30px;    
+    color: white;
+    border: 2px solid white;    
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.deco:hover {
+    border-radius: 6px;
+    background-color: black;
+}
+/*Centrar entradas de Blog*/
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .centrado {
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    
+ }
+
+/*Footer de la Pagina*/
+
+footer {
+    background-image: radial-gradient(black, rgb(27, 31, 27));
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 500px;
+  }
+  
+  .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
