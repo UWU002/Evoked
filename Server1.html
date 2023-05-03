@@ -28,8 +28,28 @@
       </p>
     <h5>20$</h5>
     <h6>/año</h6>
-    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-551648794" itemtype="http://schema.org/Product" data-single-product-id="551648794"><div class="ecsp-title" itemprop="name" style="display:none;" content="Server Pequeño"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?87097762&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
-  </div>
+    <div id="paypal-button-container-P-34183565UY313003YMRJMNXI"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AWjb7dXWyidoyUBa3Fu5j6ICh5_ZXoXu9FlWX62g7zYguihtQPaEwPEPPan9sE2XwnXjLJocbtiFi5SH&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-34183565UY313003YMRJMNXI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-34183565UY313003YMRJMNXI'); // Renders the PayPal button
+</script>
+    </div>
 </body>
 
 </html>
